@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+    background: #9fb2c684;
+    color: #333333;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+/* ---------------------imagens da pagina home ----------------------*/
+/*------------------ cabecalho------------------- */
+header {
+    position: relative;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+    /* height: auto; */
+    background-image: url(../img/sobre-background.jpg);
+    /* height: 100px; */
+    /* display: flex;*/
+    padding: 10px;
+}
+
+.container h1,
+.container p {
+    vertical-align: middle;
+
+}
+
+.sacola {
+    background: url(../img/sacola.png) no-repeat right;
+    font-size: 14px;
+    padding-right: 15px;
+    text-align: right;
+    width: 350px;
+    padding-top: 10px;
+    flex-direction: row;
+}
+
+.sacola {
+    flex-direction: row;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    margin-right: 20px;
+    /* justify-content: space-between; */
+
+
+}
+
+.sacola p {
+    flex-direction: row;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    margin-right: 0px;
+}
+
+.menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.menu-opcoes ul {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.menu-opcoes a {
+    color: #003366;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.menu-opcoes ul li {
+    display: inline;
+    margin-left: 30px;
+}
+
+
+
+/* ---------------------- menu departamentos ---------------------------- */
+.busca,
+.menu-departamentos {
+    background-color: #dcdcdc;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 230px;
+    clear: left;
+    float: left;
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos h2 {
+    margin: 10px;
+}
+
+.menu-departamentos li {
+    background-color: white;
+    margin-right: 40px;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+    list-style: none;
+}
+
+.menu-departamentos a {
+    color: #333333;
+    text-decoration: none;
+
+}
+
+.busca input {
+    vertical-align: middle;
+}
+
+.busca input[type=search] {
+    width: 170px;
+}
+
+.busca,
+.menu-departamentos {
+    float: left;
+}
+
+.menu-departamentos {
+    clear: left;
+    float: left;
+}
+
+.destaque {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 700px;
+    height: 420px;
+
+
+}
+
+.menu-departamentos {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*----------------------- painel de produtos ------------------------ */
+/* .painel {
+
+    /* margin: 10px 0;
+    padding: 10px;
+    width: 30px;   
+} */
+
+.painel li {
+    display: inline-block;
+    vertical-align: top;
+    width: 130px;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+
+.painel h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+
+
+}
+
+/* .painel ol {
+    /* margin: auto; 
+} */
+
+.painel a {
+   
+    margin-right: 0px;
+    color: rgb(36, 23, 181);
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+   
+}
+
+.painel figure {
+    border: 2px solid;
+    margin-left: 0px;
+    float: left;
+}
+
+.novidades {
+    float: left;
+    margin: auto;
+    background-color: #dcdcfd;
+    /* width: 400px; */
+}
+
+/* .mais-vendidos {
+    float: right;
+    margin: auto;
+    background-color: #dcdcfd;
+     width: 400px; 
+
+
+} */
+/* .painel,
+.novidades {
+    /* width: 500px; 
+
+} */
+
+
+/*=-------------------- rodapé ----------------------== */
+#rodape{
+    color: #777;
+    margin:30px 0;
+    padding: 30px 0;
+    background: #333333;
+}
+#rodape img {
+    margin-right: 30px;
+    vertical-align: middle;
+    width: 94px;
+    margin-left: 10px;
+
+}
