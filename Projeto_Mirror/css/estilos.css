@@ -24,10 +24,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     width: 940px;
-    /* height: auto; */
     background-image: url(../img/sobre-background.jpg);
-    /* height: 100px; */
-    /* display: flex;*/
     padding: 10px;
 }
 
@@ -40,10 +37,10 @@ header {
 .sacola {
     background: url(../img/sacola.png) no-repeat right;
     font-size: 14px;
-    padding-right: 15px;
+    padding-right: 35px;
     text-align: right;
     width: 350px;
-    padding-top: 10px;
+    padding-top: 5px;
     flex-direction: row;
 }
 
@@ -53,8 +50,6 @@ header {
     top: 0px;
     right: 10px;
     margin-right: 20px;
-    /* justify-content: space-between; */
-
 
 }
 
@@ -157,12 +152,7 @@ header {
 }
 
 /*----------------------- painel de produtos ------------------------ */
-/* .painel {
 
-    /* margin: 10px 0;
-    padding: 10px;
-    width: 30px;   
-} */
 
 .painel li {
     display: inline-block;
@@ -183,18 +173,16 @@ header {
 
 }
 
-/* .painel ol {
-    /* margin: auto; 
-} */
+
 
 .painel a {
-   
+
     margin-right: 0px;
     color: rgb(36, 23, 181);
     font-size: 12px;
     text-align: center;
     text-decoration: none;
-   
+
 }
 
 .painel figure {
@@ -207,35 +195,66 @@ header {
     float: left;
     margin: auto;
     background-color: #dcdcfd;
-    /* width: 400px; */
+
 }
 
-/* .mais-vendidos {
-    float: right;
-    margin: auto;
-    background-color: #dcdcfd;
-     width: 400px; 
-
-
-} */
-/* .painel,
-.novidades {
-    /* width: 500px; 
-
-} */
 
 
 /*=-------------------- rodapé ----------------------== */
-#rodape{
+/* #rodape {
+   
+
     color: #777;
-    margin:30px 0;
+    margin: 30px 0;
     padding: 30px 0;
     background: #333333;
 }
+
 #rodape img {
     margin-right: 30px;
     vertical-align: middle;
     width: 94px;
     margin-left: 10px;
 
+} */
+footer {
+    /* background-image: url(../img/fundo-rodape.png); */
+    clear: both;
+    padding: 20px 0;
+margin-bottom: 10px;
+
+   
+}
+footer .container{
+    position: relative;
+}
+.social{
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+.social li{
+    float: left;
+    margin-left: 0px;
+    list-style: none;
+    margin-right: 10px;
+}
+.social a{
+    /* tamanho da imagem  */
+    height: 32px;
+    width: 32px;
+    display: block;
+    text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"] {
+    background-image: url(../img/facebook.png);
+}
+
+.social a[href*="http://twitter.com/mirrorfashion"] {
+    background-image: url(../img/twitter.png);
+}
+
+.social a[href*="http://plus.google.com/mirrorfashion"] {
+    background-image: url(../img/googleplus.png);
 }
