@@ -12,10 +12,12 @@ body{
     color: #333333;
     font-family: "Lucida Sans Unicode","Lucida Grande", sans-serif;
     background: #9fb2c684;
+    border: 2px solid lightblue;
 }  
 
 
-/* inicio do header  */
+/*----------------- Cabeçalho----------------  */
+
 header{
     position: relative;
 }
@@ -25,8 +27,6 @@ header{
     width: 940px;
     height: auto;
     background-image: url(../img/sobre-background.jpg);
-    /* height: 100px; */
-    /* display: flex; */
     padding: 10px;
 }
  .container h1 , .container p {
@@ -65,7 +65,12 @@ header{
     bottom: 0;
     right: 0;
 }
-
+.menu-opcoes a:hover{
+    color:#007dc6;
+}
+.menu-opcoes a:active{
+    color: #867dc6;
+}
 .menu-opcoes ul {
     font-size: 15px;
     margin-left: 10px;
@@ -79,12 +84,16 @@ header{
  .menu-opcoes ul li{
     display: inline;
     margin-left: 30px;
-}  /*fim header*/
-/* formatação de texto das paginas  */
+
+}
+
+
+/*fim header*/
+/* -----------formatação de texto das paginas -------- */
 
  h1{ 
-     /* background-image: url(../img/sobre-background.jpg);  */
-      padding: 10px;  
+      padding: 10px; 
+      margin-left: 5px;
  }  
 
 h2{
@@ -97,8 +106,18 @@ h2{
     text-indent: 30px;
    
 }
+h1 + P {
+    text-indent: 0;
+}
+p::first-letter{
+    font-weight: bold;
+}
 
-/* imagens das paginas */
+:not(p) + p:first-line {
+    font-variant: small-caps;
+    }
+
+/* ----------------imagens das paginas -----------------*/
 figure{
     background-color: #F2EDED;
     border: 1px solid #ccc;
@@ -115,21 +134,25 @@ figure{
 } 
  #familia-pelho{
     float: right;
-    margin: 40px 0 10px 10px;
-    width: 300px;
-    height: 300px;
+    margin: 25px 0 10px 10px;
+    width: 280px;
+    height: 295px;
+}
+#familia-pelho img{
+    width: 250px;
+    height: 250px;
+    
 }
 
 figcaption{
     font-style: italic;
-    margin: 5px;
+    margin: 0px;
 
 }
 
-/* formatação do rodapé  */
+/* ----------- formatação do rodapé ------------ */
 footer {
-    /* background-image: url(../img/fundo-rodape.png); */
-    clear: both;
+     clear: both;
     padding: 20px 0;
 margin-bottom: 10px;
 
@@ -168,5 +191,4 @@ footer .container{
 .social a[href*="http://plus.google.com/mirrorfashion"] {
     background-image: url(../img/googleplus.png);
 }
-
 

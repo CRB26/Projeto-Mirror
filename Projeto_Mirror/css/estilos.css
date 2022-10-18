@@ -28,11 +28,11 @@ header {
     padding: 10px;
 }
 
-.container h1,
+/* .container h1,
 .container p {
     vertical-align: middle;
 
-}
+} */
 
 .sacola {
     background: url(../img/sacola.png) no-repeat right;
@@ -83,7 +83,21 @@ header {
     display: inline;
     margin-left: 30px;
 }
-
+.menu-opcoes a:hover {
+    color: #007dc6
+  }
+  .menu-opcoes a:active {
+color: #867dc6;
+}
+/* 
+ .menu-opcoes ul li{
+    display: inline;
+    margin-left: 30px;
+} */
+.menu-cabecalho ul{
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
 
 
 /* ---------------------- menu departamentos ---------------------------- */
@@ -111,6 +125,22 @@ header {
     margin-bottom: 1px;
     padding: 5px 10px;
     list-style: none;
+}
+.menu-departamentos li ul{
+    display: none;
+}
+.menu-departamentos li:hover ul{
+    display: block;
+
+}
+.menu-departamentos ul ul li {
+    background-color: #dcdcdc;
+}
+
+.menu-departamentos li li a:before {
+    content: '\272A ';
+    color: rgb(37, 36, 36);
+    opacity: 0.4;
 }
 
 .menu-departamentos a {
@@ -198,27 +228,17 @@ header {
 
 }
 
+.painel h2:before {
+    content: '\2756';
+    padding-right: 5px;
+    opacity: 0.4;
+    color: rgb(37, 36, 36);
+    }
+    
 
+/* ------------------inicio footer -------------*/
 
-/*=-------------------- rodapé ----------------------== */
-/* #rodape {
-   
-
-    color: #777;
-    margin: 30px 0;
-    padding: 30px 0;
-    background: #333333;
-}
-
-#rodape img {
-    margin-right: 30px;
-    vertical-align: middle;
-    width: 94px;
-    margin-left: 10px;
-
-} */
 footer {
-    /* background-image: url(../img/fundo-rodape.png); */
     clear: both;
     padding: 20px 0;
 margin-bottom: 10px;
@@ -230,7 +250,7 @@ footer .container{
 }
 .social{
     position: absolute;
-    top: 12px;
+    top: 16px;
     right: 0;
 }
 .social li{
