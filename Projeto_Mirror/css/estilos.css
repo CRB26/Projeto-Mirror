@@ -183,7 +183,9 @@ color: #867dc6;
 
 /*----------------------- painel de produtos ------------------------ */
 
-
+.painel{
+    width: 940px;
+}
 .painel li {
     display: inline-block;
     vertical-align: top;
@@ -216,7 +218,7 @@ color: #867dc6;
 }
 
 .painel figure {
-    border: 2px solid;
+    border: 2px solid rgb(101, 196, 212);
     margin-left: 0px;
     float: left;
 }
@@ -224,7 +226,8 @@ color: #867dc6;
 .novidades {
     float: left;
     margin: auto;
-    background-color: #dcdcfd;
+    background-color: #f5dcdc;
+    background: linear-gradient(#f5dcdc , #bebefa);
 
 }
 
@@ -236,6 +239,19 @@ color: #867dc6;
     }
     
 
+.painel {
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 4px #999;
+}
+
+.painel h2{
+    text-shadow: 1px 1px 2px rgba(255, 255,255,0.8)
+}
+
+.mais-vendidos{
+    background: #dcdcf5;
+    background: linear-gradient(#dcdcf5, #f4bebe);
+}
 /* ------------------inicio footer -------------*/
 
 footer {
@@ -277,3 +293,4 @@ footer .container{
 .social a[href*="http://plus.google.com/mirrorfashion"] {
     background-image: url(../img/googleplus.png);
 }
+
